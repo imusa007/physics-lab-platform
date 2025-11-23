@@ -1,0 +1,331 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{siunitx}
+\usepackage{enumitem}
+
+\sisetup{per-mode=symbol}
+
+\setlength{\parskip}{0.8ex}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\title{Lab -- Module 4 -- PHYS 131\\[0.5em]Two-Dimensional Motion}
+\date{}
+\maketitle
+
+\textbf{Student Name:} {{ student_name }}\\
+\textbf{Date:} {{ date }}\\
+\textbf{Lab Section:} {{ section }}\\[1em]
+
+\section*{Introduction}
+
+It is rare for objects to move in only a single direction in nature. More often they
+follow a curved path like the flight of a football or a planet in orbit. We usually call
+this type of motion \emph{projectile motion}.
+
+During projectile motion, objects are moving in both the horizontal ($x$) and vertical
+($y$) directions at the same time. Luckily, we can examine motion in either direction
+separately. The 1D kinematics equations still apply to both the $x$ coordinate and the
+$y$ coordinate individually.
+
+\subsubsection*{General 2D kinematics}
+
+\begin{minipage}{0.48\textwidth}
+\textbf{Horizontal Motion}
+\begin{align*}
+x_f &= x_i + v_{ix} t + \frac{1}{2} a_x t^2 \\
+v_{fx} &= v_{ix} + a_x t \\
+v_{fx}^2 &= v_{ix}^2 + 2 a_x (x_f - x_i)
+\end{align*}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\textbf{Vertical Motion}
+\begin{align*}
+y_f &= y_i + v_{iy} t + \frac{1}{2} a_y t^2 \\
+v_{fy} &= v_{iy} + a_y t \\
+v_{fy}^2 &= v_{iy}^2 + 2 a_y (y_f - y_i)
+\end{align*}
+\end{minipage}
+
+These can be simplified further by recognizing that acceleration occurs only in the
+vertical ($y$) direction because the only force acting on the object while it is in the
+air (neglecting friction and air resistance) is gravity. Gravity has a direction that is
+straight toward the center of the Earth, which we define as the negative $y$ direction.
+This means that $a_x = 0$ and $a_y = -g$. The magnitude of the acceleration due to
+gravity is $g = \SI{9.80}{\meter\per\second\squared}$.
+
+\subsubsection*{Projectile motion with gravity only}
+
+\begin{minipage}{0.48\textwidth}
+\textbf{Horizontal Motion}
+\begin{align*}
+x_f &= x_i + v_{ix} t \\
+v_{fx} &= v_{ix}
+\end{align*}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\textbf{Vertical Motion}
+\begin{align*}
+y_f &= y_i + v_{iy} t - \frac{1}{2} g t^2 \\
+v_{fy} &= v_{iy} - g t \\
+v_{fy}^2 &= v_{iy}^2 - 2 g (y_f - y_i)
+\end{align*}
+\end{minipage}
+
+The important note is that these equations are linked by time. The value of $t$ is the
+same for both equations involving $x$ and equations involving $y$ when we examine the
+same point in the flight of the object.
+
+During the flight of an object, the total velocity is always the vector sum of the
+horizontal component and vertical component of velocity.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{diagram_page2.png}
+    \caption{Horizontal and vertical components of projectile motion.}
+\end{figure}
+
+Each position of the ball in the diagram is one second apart. The horizontal component of
+velocity is constant (equal spacing), while the vertical component of velocity and
+displacement change as the ball falls, indicating acceleration due to gravity.
+
+\section*{Procedure}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Connect each piece of your Hot Wheel track to be used as a ramp. Set up the
+    ramp on a table or countertop so that the upper end of the ramp is about
+    \SI{10}{\centi\meter} above the tabletop. Record the actual ramp height as
+    \textbf{Ramp Height 1} in the Data Section.
+
+    \item Adjust the position of your ramp so the lower end of the ramp is at least
+    \SI{1}{\meter} away from the edge of the table/counter. Timing the ball becomes
+    easier the longer this distance is. Measure the actual distance between the bottom
+    of the ramp and the end of the table/counter. Record this distance in Table~1 in
+    the Data Section.
+
+    \item Release the ball from the upper end of the ramp and time how long it takes
+    for the ball to travel from when it leaves the bottom of the ramp to when it
+    leaves the edge of the table. Only time the horizontal part of the ball's motion
+    along the table; ignore the time it spends on the ramp. Repeat this measurement
+    two more times and record your times in the remaining two rows of the data table.
+
+    \item Calculate the speed of the ball when it leaves the table for each of your
+    three trials using your measured time and horizontal distance along the table.
+    This will be your horizontal velocity, $v_{ix}$, at the beginning of projectile
+    motion.
+
+    \item Measure the vertical distance from the floor up to the table/countertop
+    (where the ball leaves the table/counter and becomes airborne). Calculate the time
+    you expect the ball to be in the air for all three trials.
+
+    \item Calculate the horizontal distance you expect the ball to travel while in the
+    air for each trial. This means the horizontal distance away from the edge of the
+    table that the ball will hit the ground.
+
+    \item Find the average for each of your calculated values.
+
+    \item Place a cup at your calculated landing spot and see if you can get the ball
+    to land in the cup. You are not allowed to move it closer to or farther from the
+    table. It must be \emph{at} your calculated position. Find the calculated landing
+    spot by drawing an imaginary line straight down to the ground from the edge of the
+    table, then use your measuring tape to measure to your calculated horizontal
+    position. Record whether the ball lands in front of the cup, at/in the cup, or
+    beyond the cup below the data table.
+
+    \item Repeat steps 1 through 8 at two more ramp heights. There are additional data
+    tables in the Data Section for the new ramp heights.
+\end{enumerate}
+
+\section*{Data}
+
+%========================
+% RAMP 1
+%========================
+
+\subsection*{Ramp Height 1: {{ ramp1.height }}}
+
+\begin{center}
+\textbf{Table 1}
+\end{center}
+
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+\begin{tabular}{c}Distance from\\end of ramp to\\table edge (m)\end{tabular} &
+\begin{tabular}{c}Time for ball to\\travel along\\horizontal tabletop (s)\end{tabular} &
+\begin{tabular}{c}Velocity when\\ball leaves table\\(m/s) $v_{ix}$\end{tabular} &
+\begin{tabular}{c}Height of\\table top (m)\\$y_i$\end{tabular} &
+\begin{tabular}{c}Calculated time\\ball is in the air (s)\\$t$\end{tabular} &
+\begin{tabular}{c}Calculated horizontal\\distance travelled\\in air (m) $x_f$\end{tabular} \\
+\midrule
+{% for row in ramp1.rows %}
+{{ row.distance }} & {{ row.time }} & {{ row.vix }} & {{ row.yi }} & {{ row.t }} & {{ row.xf }} \\
+{% endfor %}
+\midrule
+\textbf{Averages:} &
+{{ ramp1.avg.distance }} &
+{{ ramp1.avg.time }} &
+{{ ramp1.avg.vix }} &
+{{ ramp1.avg.t }} &
+{{ ramp1.avg.xf }} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{1ex}
+
+Where did the ball land?\\[0.5ex]
+{% if ramp1.land == "before" %}
+\textbf{Before the cup}
+{% elif ramp1.land == "cup" %}
+\textbf{At or in the cup}
+{% elif ramp1.land == "past" %}
+\textbf{Past the cup}
+{% else %}
+\textit{(Not recorded)}
+{% endif %}
+
+\vspace{1.5ex}
+
+\textbf{Example calculation using average values:}\\
+{{ ramp1.example_calculation }}
+
+%========================
+% RAMP 2
+%========================
+
+\subsection*{Ramp Height 2: {{ ramp2.height }}}
+
+\begin{center}
+\textbf{Table 2}
+\end{center}
+
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+\begin{tabular}{c}Distance from\\end of ramp to\\table edge (m)\end{tabular} &
+\begin{tabular}{c}Time for ball to\\travel along\\horizontal tabletop (s)\end{tabular} &
+\begin{tabular}{c}Velocity when\\ball leaves table\\(m/s) $v_{ix}$\end{tabular} &
+\begin{tabular}{c}Height of\\table top (m)\\$y_i$\end{tabular} &
+\begin{tabular}{c}Calculated time\\ball is in the air (s)\\$t$\end{tabular} &
+\begin{tabular}{c}Calculated horizontal\\distance travelled\\in air (m) $x_f$\end{tabular} \\
+\midrule
+{% for row in ramp2.rows %}
+{{ row.distance }} & {{ row.time }} & {{ row.vix }} & {{ row.yi }} & {{ row.t }} & {{ row.xf }} \\
+{% endfor %}
+\midrule
+\textbf{Averages:} &
+{{ ramp2.avg.distance }} &
+{{ ramp2.avg.time }} &
+{{ ramp2.avg.vix }} &
+{{ ramp2.avg.t }} &
+{{ ramp2.avg.xf }} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{1ex}
+
+Where did the ball land?\\[0.5ex]
+{% if ramp2.land == "before" %}
+\textbf{Before the cup}
+{% elif ramp2.land == "cup" %}
+\textbf{At or in the cup}
+{% elif ramp2.land == "past" %}
+\textbf{Past the cup}
+{% else %}
+\textit{(Not recorded)}
+{% endif %}
+
+%========================
+% RAMP 3
+%========================
+
+\subsection*{Ramp Height 3: {{ ramp3.height }}}
+
+\begin{center}
+\textbf{Table 3}
+\end{center}
+
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+\begin{tabular}{c}Distance from\\end of ramp to\\table edge (m)\end{tabular} &
+\begin{tabular}{c}Time for ball to\\travel along\\horizontal tabletop (s)\end{tabular} &
+\begin{tabular}{c}Velocity when\\ball leaves table\\(m/s) $v_{ix}$\end{tabular} &
+\begin{tabular}{c}Height of\\table top (m)\\$y_i$\end{tabular} &
+\begin{tabular}{c}Calculated time\\ball is in the air (s)\\$t$\end{tabular} &
+\begin{tabular}{c}Calculated horizontal\\distance travelled\\in air (m) $x_f$\end{tabular} \\
+\midrule
+{% for row in ramp3.rows %}
+{{ row.distance }} & {{ row.time }} & {{ row.vix }} & {{ row.yi }} & {{ row.t }} & {{ row.xf }} \\
+{% endfor %}
+\midrule
+\textbf{Averages:} &
+{{ ramp3.avg.distance }} &
+{{ ramp3.avg.time }} &
+{{ ramp3.avg.vix }} &
+{{ ramp3.avg.t }} &
+{{ ramp3.avg.xf }} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{1ex}
+
+Where did the ball land?\\[0.5ex]
+{% if ramp3.land == "before" %}
+\textbf{Before the cup}
+{% elif ramp3.land == "cup" %}
+\textbf{At or in the cup}
+{% elif ramp3.land == "past" %}
+\textbf{Past the cup}
+{% else %}
+\textit{(Not recorded)}
+{% endif %}
+
+\section*{Questions}
+
+\begin{enumerate}[label=\arabic*.]
+    \item What two values affect the time the ball is in the air? (Hint: You measured
+    one of them during the lab and the other is a universal constant.)\\[0.3em]
+    \textbf{Answer:} {{ q1 }}
+
+    \item Is the time the ball spends in the air affected by how fast it is moving when
+    it leaves the table? Why or why not?\\[0.3em]
+    \textbf{Answer:} {{ q2 }}
+
+    \item Did the ball land in the position you expected at any of the ramp heights
+    (did it ever land in the cup)? Was the actual place the ball landed closer or
+    farther from the table than the calculated value? Why do you think this is?\\[0.3em]
+    \textbf{Answer:} {{ q3 }}
+
+    \item What are some sources of error in your experimental measurements that would
+    cause you to calculate a longer distance than what is actually observed?
+    Experimental errors are things that we have ignored during calculations or things
+    that affect our measurements, but we cannot control.\\[0.3em]
+    \textbf{Answer:} {{ q4 }}
+
+    \item Now consider doing the same experiment, except you place a second, upward
+    ramp at the edge of the table so that the ball is moving in both the $x$ and the
+    $y$ directions when it leaves the table. The ramp causes the ball to leave the
+    table at \SI{2.10}{\meter\per\second} at an angle of $30^\circ$ above the
+    horizontal.
+    \begin{enumerate}[label=\alph*)]
+        \item {{ q5a }}
+        \item {{ q5b }}
+        \item {{ q5c }}
+        \item {{ q5d }}
+        \item {{ q5e }}
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
