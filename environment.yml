@@ -1,0 +1,15 @@
+name: physics-lab
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandoc
+  - pip
+  - pip:
+      - streamlit
+      - flask
+      - pandas
+      - matplotlib
+      - jinja2
+      - requests
+      - beautifulsoup4
