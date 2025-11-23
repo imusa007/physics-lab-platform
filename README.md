@@ -6,7 +6,7 @@ A web-based interactive physics laboratory platform for running, visualizing, an
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/physics-lab-platform.git
+git clone https://github.com/imusa007/physics-lab-platform.git
 cd physics-lab-platform
 ```
 
@@ -404,29 +404,3 @@ labs/
 6. Connect Streamlit submission to backend PDF
     
 
----
-
-# ✔ **Save this file as**:
-
-### `PROJECT_SUMMARY.md`
-
-or
-
-### `README.md`
-
-in your repo to kickstart development.
-
----
-
-If you want, I can also generate:
-
-- a **backend skeleton folder**
-    
-- a **LaTeX template structure**
-    
-- a **lab folder structure**
-    
-- a **full roadmap with checkboxes**
-    
-
-Just tell me.
