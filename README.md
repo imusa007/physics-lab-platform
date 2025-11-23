@@ -1,3 +1,51 @@
+# Physics Lab Platform
+
+A web-based interactive physics laboratory platform for running, visualizing, and managing physics lab experiments with a Python backend and Streamlit front-end.
+
+## 🚀 Getting Started: Installation & Running the Project
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/<your-username>/physics-lab-platform.git
+cd physics-lab-platform
+```
+
+### 2. Create and Activate the Conda Environment
+```bash
+conda create -n physics-lab python=3.11 -y
+conda activate physics-lab
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Backend
+```bash
+python app.py
+```
+
+### 5. Run the Frontend
+```bash
+streamlit run app.py
+```
+
+### 6. Access the Application
+Backend will be available at:
+```
+http://localhost:8000
+```
+
+Frontend will be available at:
+```
+http://localhost:8501
+```
+
+---
+
+# Project Plan
+
 
 # 📘 **Physics Lab Web App — Project Summary (MVP → Full System Plan)**
 
